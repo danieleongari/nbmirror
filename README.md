@@ -8,6 +8,8 @@ nbmirror builds static HTML mirror pages for Jupyter notebooks in repositories t
 
 It is designed for static hosting such as GitHub Pages. It does not run a Python server, and it does not execute notebooks by default.
 
+View a simple example at https://danieleongari.github.io/nbmirror/ or its real use in [this other project of mine](https://github.com/danieleongari/demographic_model_page).
+
 ## Why
 
 Notebook links in static sites are awkward to maintain when you want rendered pages with rich outputs. nbmirror converts stored notebook outputs into browsable HTML pages that can be linked from your root `index.html`.
