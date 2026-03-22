@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "nbmirror"
 version = "0.1.0"
-description = "Generate static HTML mirrors for notebooks in repositories"
+description = "Convert your .ipynb notebooks to .html with hideable code cells"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "nbmirror contributors" }]
