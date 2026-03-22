@@ -1,0 +1,7 @@
+- id: nbmirror
+  name: nbmirror
+  description: Build HTML notebook mirrors for changed notebooks
+  entry: nbmirror hook-run
+  language: python
+  files: ^notebooks/.*\.ipynb$
+  pass_filenames: true

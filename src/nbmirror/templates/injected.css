@@ -1,0 +1,291 @@
+.nbm-home-wrap {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.nbm-theme-toggle {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 9999;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid #c2c8d0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1f2328;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.nbm-theme-toggle:hover {
+  background: #f6f8fa;
+}
+
+.nbm-home-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 980px;
+  margin: 1rem auto;
+  width: calc(100% - 0.75rem);
+}
+
+.nbm-home-bottom {
+  max-width: 980px;
+  margin: 1rem auto;
+  width: calc(100% - 0.75rem);
+  text-align: left;
+}
+
+.nbm-home-btn {
+  display: inline-block;
+  padding: 0.48rem 0.85rem;
+  border: 1px solid #c2c8d0;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #1f2328;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.nbm-home-btn:hover {
+  background: #eef2f6;
+}
+
+.nbm-controls-wrap {
+  margin: 0;
+}
+
+.nbm-controls-toggle {
+  display: inline-block;
+  padding: 0.46rem 0.82rem;
+  border: 1px solid #c2c8d0;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2328;
+  font-family: sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nbm-controls-toggle:hover {
+  background: #f6f8fa;
+}
+
+.nbm-home-top .nbm-controls-toggle {
+  margin-left: auto;
+}
+
+.cell.code_cell,
+.jp-CodeCell {
+  position: relative;
+  padding-left: 2.2rem;
+}
+
+.nbm-toggle {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  z-index: 5;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1;
+  border: 1px solid #c2c8d0;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+}
+
+.nbm-toggle:hover {
+  background: #f6f8fa;
+}
+
+.prompt,
+.input_prompt,
+.output_prompt,
+.jp-InputPrompt,
+.jp-OutputPrompt {
+  display: none !important;
+}
+
+.nbm-output-num {
+  position: absolute;
+  left: 0.35rem;
+  top: 0.55rem;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  border: 1px solid #c2c8d0;
+  background: #f2f4f7;
+  color: #5d6672;
+  font-size: 0.72rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+
+.nbm-output-num:focus {
+  outline: 2px solid #7aa7ff;
+  outline-offset: 2px;
+}
+
+body.nbm-controls-hidden .nbm-toggle,
+body.nbm-controls-hidden .nbm-output-num {
+  display: none !important;
+}
+
+body.nbm-controls-hidden .cell.code_cell.nbm-no-output,
+body.nbm-controls-hidden .jp-CodeCell.nbm-no-output {
+  display: none !important;
+}
+
+.cell.code_cell .input,
+.jp-CodeCell .jp-InputArea {
+  display: none;
+}
+
+.cell.code_cell.nbm-expanded .input,
+.jp-CodeCell.nbm-expanded .jp-InputArea {
+  display: block;
+}
+
+body.nbm-dark {
+  background: #101418;
+  color: #e6edf3;
+}
+
+body.nbm-dark #notebook-container,
+body.nbm-dark .jp-Notebook,
+body.nbm-dark .container {
+  background: #161b22;
+  color: #e6edf3;
+  box-shadow: 0 0 0 1px rgba(230, 237, 243, 0.2), 0 10px 30px rgba(173, 216, 230, 0.28);
+}
+
+body.nbm-dark .nbm-home-btn,
+body.nbm-dark .nbm-controls-toggle,
+body.nbm-dark .nbm-toggle,
+body.nbm-dark .nbm-theme-toggle {
+  background: #1f2933;
+  color: #e6edf3;
+  border-color: #3a4652;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2), 0 6px 18px rgba(173, 216, 230, 0.35);
+}
+
+body.nbm-dark .nbm-theme-toggle {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.26), 0 8px 22px rgba(173, 216, 230, 0.42);
+}
+
+body.nbm-dark .nbm-home-btn:hover,
+body.nbm-dark .nbm-controls-toggle:hover,
+body.nbm-dark .nbm-toggle:hover,
+body.nbm-dark .nbm-theme-toggle:hover {
+  background: #263341;
+}
+
+body.nbm-dark .nbm-output-num {
+  background: #1f2933;
+  color: #d0dae3;
+  border-color: #3a4652;
+}
+
+body.nbm-dark .cell.code_cell .input,
+body.nbm-dark .cell.code_cell .input_area,
+body.nbm-dark .jp-CodeCell .jp-InputArea,
+body.nbm-dark .jp-CodeCell .jp-InputArea-editor,
+body.nbm-dark .cell.code_cell .input pre,
+body.nbm-dark .jp-CodeCell .jp-InputArea pre {
+  background: #f2f4f7 !important;
+  background-color: #f2f4f7 !important;
+  color: #1f2328 !important;
+}
+
+body.nbm-dark .output,
+body.nbm-dark .output_area,
+body.nbm-dark .output_subarea,
+body.nbm-dark .output_text,
+body.nbm-dark .output_stream,
+body.nbm-dark .output_stdout,
+body.nbm-dark .output_stderr,
+body.nbm-dark .jp-OutputArea,
+body.nbm-dark .jp-OutputArea-output,
+body.nbm-dark .jp-RenderedText,
+body.nbm-dark .jp-OutputArea pre,
+body.nbm-dark .output pre {
+  color: #e6edf3 !important;
+}
+
+body.nbm-dark .jp-OutputArea pre,
+body.nbm-dark .output pre,
+body.nbm-dark .output_subarea pre {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+body.nbm-dark h1,
+body.nbm-dark h2,
+body.nbm-dark h3,
+body.nbm-dark h4,
+body.nbm-dark h5,
+body.nbm-dark h6,
+body.nbm-dark .rendered_html h1,
+body.nbm-dark .rendered_html h2,
+body.nbm-dark .rendered_html h3,
+body.nbm-dark .rendered_html h4,
+body.nbm-dark .rendered_html h5,
+body.nbm-dark .rendered_html h6 {
+  color: #e6edf3 !important;
+}
+
+body.nbm-dark .rendered_html .dataframe,
+body.nbm-dark .rendered_html .dataframe th,
+body.nbm-dark .rendered_html .dataframe td,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe th,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe td {
+  color: #111111 !important;
+}
+
+body.nbm-dark .rendered_html .dataframe tbody tr:nth-child(even) th,
+body.nbm-dark .rendered_html .dataframe tbody tr:nth-child(even) td,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:nth-child(even) th,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:nth-child(even) td {
+  background: #f9f9f9 !important;
+  background-color: #f9f9f9 !important;
+}
+
+body.nbm-dark .rendered_html .dataframe tbody tr:nth-child(odd) th,
+body.nbm-dark .rendered_html .dataframe tbody tr:nth-child(odd) td,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:nth-child(odd) th,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:nth-child(odd) td {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+body.nbm-dark .rendered_html .dataframe thead th,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe thead th {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+body.nbm-dark .rendered_html .dataframe tbody tr:hover th,
+body.nbm-dark .rendered_html .dataframe tbody tr:hover td,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:hover th,
+body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:hover td {
+  background: #84afbc !important;
+  background-color: #84afbc !important;
+}
