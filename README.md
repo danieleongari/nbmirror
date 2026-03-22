@@ -42,13 +42,7 @@ Also, I prefer to have the possibility to hide the code of the notebooks, for a 
 ## Installation
 
 ```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-# source .venv/bin/activate
-
-pip install -e .
+pip install nbmirror
 ```
 
 ## CLI usage
